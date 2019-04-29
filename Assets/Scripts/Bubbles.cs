@@ -18,13 +18,13 @@ public class Bubbles : MonoBehaviour
  
     public void instantiateBubble() {
         if (active) {
-            Vector3 newPosition = (transform.position);
+			Vector3 newPosition = (transform.localPosition);
             newPosition.z += Random.Range(-radius, radius);
             newPosition.y += Random.Range(-radius, radius);
             //newPosition.x += Random.Range(-radius, radius);
             GameObject burbuja = Instantiate(bubblePrefab) as GameObject;
 			burbuja.transform.parent = gameObject.transform;
-			burbuja.transform.position = newPosition;
+			burbuja.transform.localPosition = newPosition;
             float destroyTime = Random.Range(0.1f, 1.0f);
             float size = Random.Range(0.2f, 1.2f);
             burbuja.transform.localScale *= size;

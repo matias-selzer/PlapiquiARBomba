@@ -1105,7 +1105,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.14374836, y: 1}
-  m_AnchoredPosition: {x: 0.3999939, y: -0.6170006}
+  m_AnchoredPosition: {x: 0.39996338, y: -0.6170006}
   m_SizeDelta: {x: 1.2000122, y: 0.3239975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244284250
@@ -1478,7 +1478,7 @@ MonoBehaviour:
   bubblePrefab: {fileID: 5774316783515244676, guid: 7d8d551d2c5e8734e87bba7e4d309923,
     type: 3}
   timePerBubble: 0.03
-  radius: 0.15
+  radius: 0.19
 --- !u!4 &1655968134
 Transform:
   m_ObjectHideFlags: 0
@@ -2046,7 +2046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.31, y: 0.23350802}
-  m_AnchoredPosition: {x: 0.8999996, y: 0.10003662}
+  m_AnchoredPosition: {x: 0.9000244, y: 0.10003662}
   m_SizeDelta: {x: 1.7000008, y: 0.099999905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107945278
