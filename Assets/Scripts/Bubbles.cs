@@ -44,7 +44,7 @@ public class Bubbles : MonoBehaviour
 	public void activate(){
 		active = true;
 		GetComponent<AudioSource>().volume = 1;
-		Debug.Log ("nico gazcon");
+		//Debug.Log ("nico gazcon");
 	}
 
 	public void deactivate(){

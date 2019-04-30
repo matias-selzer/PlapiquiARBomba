@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class CaudalManager
 {
-    private int caudal=40;
-	private const int min = 20;
-	private const int max = 90;
+    private int caudal=50;
+	private const int min = 25;
+	private const int max = 75;
 
     public void increase() {
         if (caudal < max) {
-            caudal+=10;
+            caudal+=25;
         }
     }
 
     public void decrease() {
         if (caudal > min) {
-            caudal -= 10;
+            caudal -= 25;
         }
     }
 
@@ -30,6 +30,8 @@ public class CaudalManager
 	}
 
 	public int getCaudal(){
+		if (caudal == 75)
+			return 70;
 		return caudal;
 	}
 

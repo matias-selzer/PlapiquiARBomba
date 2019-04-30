@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PumpView : MonoBehaviour
 {
     public GameObject cover;
-	public Text caudalLabel;
+	public Text aperturaLabel,caudalLabel;
 	public GameObject bIncreaseCaudal, bDecreaseCaudal;
 	public Bubbles burbujas;
 
@@ -19,7 +19,7 @@ public class PumpView : MonoBehaviour
 
 	public void activateCavitation(){
 		burbujas.activate ();
-		Debug.Log ("pepepepepepe");
+		//Debug.Log ("pepepepepepe");
 	}
 	public void deactivateCavitation(){
 		burbujas.deactivate ();
@@ -45,9 +45,19 @@ public class PumpView : MonoBehaviour
 
 
 	public void updateCaudalLabel(int newCaudal){
-		caudalLabel.text = newCaudal + "%";
+		aperturaLabel.text = newCaudal + "%";
 		bIncreaseCaudal.SetActive (true);
 		bDecreaseCaudal.SetActive (true);
+		string caudal = "Caudal: ";
+		if (newCaudal == 25) {
+			caudal += 20;
+		} else if (newCaudal == 50) {
+			caudal += 40;
+		} else {
+			caudal += 60;
+		}
+		caudal += " m3/h";
+		caudalLabel.text = caudal;
 	}
 	public void gotUpperLimit(){
 		bIncreaseCaudal.SetActive (false);
