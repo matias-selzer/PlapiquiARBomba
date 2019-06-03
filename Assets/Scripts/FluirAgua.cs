@@ -15,7 +15,7 @@ public class FluirAgua : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float offset = Time.time * speed;
+		float offset = Time.time * speed * CaudalManager.caudal / 25.0f;;
         GetComponent<Renderer>().material.mainTextureOffset = new Vector2(0,offset);
     }
 }

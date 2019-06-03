@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CaudalManager
 {
-    private int caudal=50;
+	public static int caudal=50;
 	private const int min = 25;
 	private const int max = 75;
 
